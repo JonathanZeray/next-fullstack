@@ -30,7 +30,7 @@ const Navbar = () => {
           alt="Promptopia Logo"
           className="object-contain"
         />
-        <p className="logo_text">Promptopia</p>
+        <p className="logo_text">TheProduct</p>
       </Link>
 
 
