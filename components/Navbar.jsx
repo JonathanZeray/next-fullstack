@@ -32,6 +32,9 @@ const Navbar = () => {
         />
         <p className="logo_text">TheProduct</p>
       </Link>
+      <Link href="/feed-page">
+      <p className="font-bold" title="See what others are saying">Feed</p>
+      </Link>
 
 
       {/* Desktop Navigation */}
