@@ -40,20 +40,18 @@
 
 .canvas-container {
     position: sticky;
-    top: 0;
+    top: 25%;
 }
 
 .canvas-text-container {
-    background-color:blue;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* position: sticky; */
+    /* top: 1; */
 }
 
 .canvas-text {
-    top: 200vw;
     color: red;
-    position: absolute;
     font-size: 32px;
     z-index: 3;
     font-family: 'Kanit', sans-serif;

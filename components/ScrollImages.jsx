@@ -15,7 +15,7 @@ function ScrollImages() {
       img.src = "/assets/scrollimages/0001.png";
   
       img.onload = () => {
-         canvasRef.current.width = window.innerWidth /2; /*  /2 om det är porträtt video */
+         canvasRef.current.width = window.innerWidth / 2; /*  /2 om det är porträtt video */
           canvasRef.current.height = window.innerHeight /2;
         contextRef.current.drawImage(
           img,
@@ -77,7 +77,12 @@ function ScrollImages() {
               <canvas ref={canvasRef} id="scroll-canvas" />
             </div>
             <div className="canvas-text-container">
-              <h1 className="canvas-text">Clench your thirst in a new, special way.</h1>
+              <h1 className="canvas-text">#1 Lorem ipsum dolor sit amet.</h1>
+              <br />
+              <h1 className="canvas-text">#2 Lorem ipsum dolor sit amet.</h1>
+              <br />
+              <h1 className="canvas-text">#3 Lorem ipsum dolor sit amet.</h1>
+
             </div>
           </section>
   

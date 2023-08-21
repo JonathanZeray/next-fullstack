@@ -4,8 +4,8 @@ const FeedPage = () => {
   return (
     <section className="w-full flex-center flex-col">
     <h1 className="head_text text-center">
-      Discover & Share <br className="max-md:hidden" />
-      <span className="orange_gradient text-center">This new product</span>
+      Your thoughts about <br className="max-md:hidden" />
+      <span className=" text-center">this new product</span>
     </h1>
     <p className="desc text-center">
       Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum
