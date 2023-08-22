@@ -13,11 +13,11 @@ const RootLayout = ({ children }) => {
     <html lang="en">
       <body>
         <Provider>
-          <div className="main">
+          <div className="">
             <div className="" />
           </div>
 
-          <main className="app">
+          <main className="">
             <Navbar />
             {children}
           </main>
