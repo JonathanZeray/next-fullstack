@@ -75,14 +75,12 @@ function ScrollImages() {
   
           <section className="section-container">
             <div className="canvas-container flex justify-center h-screen">
-              <canvas ref={canvasRef} id="scroll-canvas" className="sm:w-3/4 sm:h-3/4 w-screen h-3/4" />
+              <canvas ref={canvasRef} id="scroll-canvas" className="sm:w-3/4 sm:h-3/4 w-screen h-2/4" />
             </div>
-            <div className="canvas-text-container">
+            <div className="sticky top-2/4 mx-4 h-screen">
               <h1 className="font-inter font-extrabold text-4xl z-10 text-white">#1 Lorem ipsum dolor sit amet.</h1>
               <br />
               <h1 className="canvas-text">#2 Lorem ipsum dolor sit amet.</h1>
-              <br />
-              <h1 className="canvas-text">#3 Lorem ipsum dolor sit amet.</h1>
 
             </div>
           </section>
