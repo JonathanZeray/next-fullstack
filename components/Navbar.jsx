@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className="flex-between w-full mb-2 pt-3">
       <Link href="/" className="flex gap-2 flex-center">
         <Image
-          src="/assets/images/logo.sv"
+          src="/assets/images/pear-logo.svg"
           width={30}
           height={30}
           alt="Promptopia Logo"
