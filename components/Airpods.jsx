@@ -2,12 +2,12 @@ import React from "react";
 import { PresentationControls, Float } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Model from "./canvas/3Dmodel";
-import BackgroundVideo from "./BackgroundVideo";
+import CircleBgVideo from "./CircleBgVideo";
 
 const Airpods = () => {
   return (
     <>
-    <BackgroundVideo />
+    <CircleBgVideo />
       <Canvas>
         <PresentationControls>
           <Float speed={2}>

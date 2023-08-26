@@ -98,7 +98,7 @@ function ScrollImages() {
               </h1>
               <br />
               <div className="flex justify-center">
-                <p className="sm:w-2/4 font-inter text-white text-xl">
+                <p className="sm:w-2/4 font-inter text-white text-xl text-center">
                   Up to 2 times more active noise cancellation compared to the
                   previous generation. With touch controls, you adjust the
                   volume with a swipe. And the battery life takes a significant
