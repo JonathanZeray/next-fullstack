@@ -110,12 +110,12 @@ function ScrollImages() {
         </section>
           <div className="w-full sm:h-screen flex justify-center items-center">
           <VisibleExpand>
-            <h1 className="font-inter text-white sm:text-8xl font-bold text-3xl">A redefined masterpiece</h1>
+            <h1 className="font-inter text-white sm:text-8xl font-bold text-3xl mb-20">A redefined masterpiece</h1>
           </VisibleExpand>
           </div>
-        <section className="relative text-center h-screen flex justify-center items-center">
+        {/* <section className="relative text-center h-screen flex justify-center items-center">
           <Airpods />
-        </section>
+        </section> */}
       </div>
     </>
   );

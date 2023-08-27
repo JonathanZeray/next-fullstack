@@ -25,8 +25,8 @@ export function VisibleExpand ({children}) {
       viewport={{  }}
       transition={{ duration: 1.2 }}
       variants={{
-        visible: { scale: 1},
-        hidden: { scale: 0.7 }
+        visible: { scale: 1, opacity: 1},
+        hidden: { scale: 0.9, opacity: 0.4 }
       }}
     >
       {children}

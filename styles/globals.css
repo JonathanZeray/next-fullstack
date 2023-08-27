@@ -8,10 +8,9 @@
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
 
-html {
-  scroll-behavior: smooth;
+.word {
+  opacity: 0.2;
 }
-
 
 .main {
   width: 100vw;
@@ -173,3 +172,23 @@ html {
 .flex-between {
   @apply flex justify-between items-center;
 }
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+   pointer-events: none;
+} 
