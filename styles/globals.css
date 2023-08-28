@@ -8,8 +8,17 @@
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
 
+body {
+  background-color: #000000;
+}
+
 .word {
   opacity: 0.2;
+  margin-bottom: 0.2rem;
+}
+
+.gray_text {
+  color: #6e6e73;
 }
 
 .main {

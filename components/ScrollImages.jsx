@@ -79,7 +79,7 @@ function ScrollImages() {
 
   return (
     <>
-      <div className="scrollimages-container">
+      <div className="scrollimages-container m-0 p-0">
         <section className="section-container">
           <div className="sticky top-0 flex justify-center h-screen">
             <canvas

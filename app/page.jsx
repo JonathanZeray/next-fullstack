@@ -1,12 +1,13 @@
 "use client";
 
 import Lenis from "@studio-freight/lenis";
+import { useEffect } from "react";
 
 import ScrollImages from "@components/ScrollImages";
 import DancerBgVideo from "@components/DancerBgVideo";
 import { WhenVisible } from "@components/WhenVisible";
+import SoundInfo from "@components/SoundInfo";
 
-import { useEffect } from "react";
 
 const Home = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const Home = () => {
       <WhenVisible>
         <DancerBgVideo />
       </WhenVisible>
+      <SoundInfo />
     </>
   );
 };
