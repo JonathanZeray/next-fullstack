@@ -95,14 +95,30 @@ const AirpodInfo = () => {
           </div>
         </div>
       </div>
-      <div className="h-screen text-white">
-        <h2 className="">Magically simple installation.</h2>
-        <h3 className="">Remarkably straightforward simplicity.</h3>
-        <p className="">
-          You set them up in an instant and control them with Siri commands.
-          AirPods Pro are as magical as the rest of the AirPods family, and the
-          new features make them as convenient to use as possible.
-        </p>
+      <div className="h-screen flex sm:items-center text-white">
+        <div className="text-white ml-6 sm:mx-32 font-inter">
+          <h2 className="font-semibold text-2xl sm:text-4xl mb-4">
+            Magically simple installation.
+          </h2>
+          <h3 className="w-full font-bold text-6xl sm:text-8xl mb-8">
+            Remarkably simple.
+          </h3>
+          <p className="font-semibold text-2xl sm:w-3/4">
+            You set them up in an instant and control them with Siri commands.
+            AirPods Pro are as magical as the rest of the AirPods family, and
+            the new features make them as convenient to use as possible.
+          </p>
+        </div>
+      </div>
+      <div className="h-screen">
+      <video
+          className="sticky top-0 sm:w-full w-screen h-2/4 object-fit"
+          autoPlay
+          muted
+          loop
+        >
+          <source src="/assets/video/phone-and-case.mp4" type="video/mp4" />
+        </video>
       </div>
     </>
   );
