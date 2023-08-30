@@ -1,12 +1,13 @@
 import React from "react";
+import AirpodInfo from "./AirpodInfo";
 
 const SoundInfo = () => {
   return (
     <>
       <div className="h-[20vh] border-0"></div>
-      <section className="font-satoshi h-screen w-full leading-3">
+      <section className="font-satoshi h-screen w-full leading-1">
         <div className="text-white ml-6 sm:mx-32 mb-32 sm:mb-20">
-          <h2 className="font-semibold text-2xl sm:text-4xl">Sound</h2>
+          <h2 className="font-semibold text-2xl sm:text-4xl mb-4">Sound</h2>
           <h3 className="font-bold text-4xl sm:text-8xl mb-8">
             H2. Breathe new life into every tone.
           </h3>
@@ -18,12 +19,12 @@ const SoundInfo = () => {
             bass.
           </p>
         </div>
-        <div className="sm:flex sm:w-full sm:border-y-[0.5px] sm:border-gray-600">
-          <video className="sm:h-full object-contain" autoPlay muted>
+        <div className="sm:flex sm:w-full border-y-[0.8px] sm:border-gray-500">
+          <video className="sm:h-full object-contain border-b-[0.8px] sm:border-b-0 border-gray-500" autoPlay muted>
             <source src="/assets/video/h2.mp4" type="video/mp4" />
           </video>
-          <div className="flex justify-center items-center sm:border-l-[0.5px] sm:border-gray-600">
-            <p className="font-inter gray_text font-semibold text-2xl sm:text-3xl mx-6 mt-32 sm:mt-0 sm:mx-20 sm:text-left">
+          <div className="flex justify-center items-center sm:border-l-[0.8px] sm:border-gray-500 mb-10 sm:mb-0">
+            <p className="font-inter gray_text font-semibold text-2xl sm:text-3xl mx-6 mt-16 sm:mt-0 sm:mx-20 sm:text-left">
               <span className="text-white opacity-100">The H2 chip</span>{" "}
               performs more tasks than ever and utilizes{" "}
               <span className="text-green-500">advanced algorithms</span> for
@@ -32,7 +33,7 @@ const SoundInfo = () => {
             </p>
           </div>
         </div>
-        <div className="bg-black h-screen"></div>
+        <AirpodInfo />
       </section>
     </>
   );
