@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <>
       <ScrollImages />
-      <WhenVisible>
+      <WhenVisible duration={1}>
         <DancerBgVideo />
       </WhenVisible>
       <SoundInfo />

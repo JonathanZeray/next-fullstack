@@ -89,7 +89,7 @@ function ScrollImages() {
             />
           </div>
           <div className="sticky top-2/4 mx-4 h-screen">
-            <WhenVisible>
+            <WhenVisible duration={1}>
               <p className="Font-inter text-green-500 font-semibold text-2xl text-center">
                 The all new
               </p>

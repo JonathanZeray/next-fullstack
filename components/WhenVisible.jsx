@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
-export function WhenVisible ({children}) {
+export function WhenVisible ({children, duration}) {
     return (
         <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{  }}
-        transition={{ duration: 1 }}
+        transition={{ duration: duration }}
         variants={{
           visible: { opacity: 1},
           hidden: { opacity: 0 }

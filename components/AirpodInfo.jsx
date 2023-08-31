@@ -4,9 +4,10 @@ import React from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useRef, useEffect } from "react";
+import Image from "next/image";
 
 import "./AirpodInfo.css";
-import Image from "next/image";
+import { WhenVisible } from "./WhenVisible";
 
 const AirpodInfo = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -30,7 +31,7 @@ const AirpodInfo = () => {
 
   return (
     <>
-      <div className="relative h-screen w-full flex flex-col items-center">
+      <section className="relative h-screen w-full flex flex-col items-center">
         <div className="w-3/4 mt-12">
           <h3 className="w-full sm:w-2/4 gray_text font-bold text-xl">
             <span className="text-container text-white">
@@ -94,8 +95,8 @@ const AirpodInfo = () => {
             />
           </div>
         </div>
-      </div>
-      <div className="h-screen flex sm:items-center text-white">
+      </section>
+      <section className="h-screen flex sm:items-center text-white">
         <div className="text-white ml-6 sm:mx-32 font-inter">
           <h2 className="font-semibold text-2xl sm:text-4xl mb-4">
             Magically simple installation.
@@ -109,17 +110,137 @@ const AirpodInfo = () => {
             the new features make them as convenient to use as possible.
           </p>
         </div>
-      </div>
-      <div className="h-screen">
-      <video
-          className="sticky top-0 sm:w-full w-screen h-2/4 object-fit"
-          autoPlay
-          muted
-          loop
-        >
-          <source src="/assets/video/phone-and-case.mp4" type="video/mp4" />
-        </video>
-      </div>
+      </section>
+      <WhenVisible duration={1.5}>
+        <section className="h-[200vh] w-full sm:w-3/4 sm:m-auto flex flex-wrap sm:justify-around">
+          <div className="hidden sm:flex sticky top-0 items-center sm:items-end h-screen w-fit">
+            <Image
+              src="/assets/images/magical_case.webp"
+              width={150}
+              height={160}
+              alt="Picture of airpod case"
+              className="sm:block sm:mb-8 sm:ml-8"
+            />
+          </div>
+          <div className="sticky top-0 h-2/4 sm:h-screen w-full sm:w-1/4">
+            <video
+              className="sm:w-full w-screen h-2/4 sm:h-full object-fit bg-black z-1"
+              autoPlay
+              muted
+              loop
+            >
+              <source src="/assets/video/phone-and-case.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div className="flex flex-col justify-around h-screen sm:h-full w-3/4 sm:w-2/4 mx-auto gray_text font-semibold text-xl sm:text-2xl">
+            <WhenVisible duration={0.75}>
+              <p className="">
+                <span className="text-white">Magically simple setup</span>{" "}
+                <br /> Hold your AirPods Pro close to your iPhone and press
+                Connect – that's how easily you pair them with all the devices
+                associated with your iCloud account. If you have an engraved
+                case, the same engraving will appear digitally on the device's
+                screen, making the whole experience even more{" "}
+                <span className="text-green-500">personal</span>.
+              </p>
+            </WhenVisible>
+            <WhenVisible duration={0.75}>
+              <p className="">
+                <span className="text-white">Listen together</span> <br />{" "}
+                Easily share a song or a TV series between two chosen sets of
+                AirPods. Just keep the AirPods close to the iPhone, iPad, or
+                Apple TV you're listening on and connect{" "}
+                <span className="text-green-500">instantly</span>.
+              </p>
+            </WhenVisible>
+          </div>
+        </section>
+      </WhenVisible>
+      <section className="">
+        <div className="h-[200vh] flex flex-col justify-around items-center font-inter font-semibold">
+          <WhenVisible duration={1}>
+            <div className="w-3/4 flex flex-col mx-auto">
+              <Image
+                src="/assets/images/icon_siri.webp"
+                width={50}
+                height={60}
+                alt="Siri Icon"
+                className="mb-6"
+              />
+              <p className="gray_text">
+                <strong className="text-white">"Hey Siri" is always on</strong>
+                <br />
+                Listen to music, make a call, get directions, or check your
+                schedule using your voice. Just say "Hey Siri" to activate your
+                favorite assistant and keep track of all your everyday tasks.
+              </p>
+            </div>
+          </WhenVisible>
+          <WhenVisible duration={1}>
+            <div className="w-3/4 flex flex-col mx-auto">
+              <Image
+                src="/assets/images/icon_switching.webp"
+                width={50}
+                height={60}
+                alt="Icon of switching units"
+                className="mb-6"
+              />
+              <p className="gray_text">
+                <strong className="text-white">
+                  Switch smoothly between devices
+                </strong>
+                <br /> Automatic switching means the audio seamlessly follows
+                you between iPhone, Apple Watch, iPad, Mac, and Apple TV. You
+                can take a call on your iPhone while playing music on your Mac –
+                without needing to switch between devices.
+              </p>
+            </div>
+          </WhenVisible>
+          <WhenVisible duration={1}>
+            <div className="w-3/4 flex flex-col mx-auto">
+              <Image
+                src="/assets/images/icon_accessibility.webp"
+                width={50}
+                height={60}
+                alt="Accessibility icon"
+                className="mb-6"
+              />
+              <p className="gray_text">
+                <strong className="text-white">
+                  AirPods and accessibility
+                </strong>
+                <br /> AirPods Pro offer more than just great sound. They also
+                include features for users with hearing impairments. Functions
+                like Conversation Boost focus on voices directly in front of
+                you. Customized headphone audio amplifies the frequencies you
+                need to hear clearly. And if you need to focus on a guest
+                lecturer in a crowded auditorium, there's the Live Listen
+                feature, which captures distant sounds in conjunction with your
+                iPhone.
+              </p>
+            </div>
+          </WhenVisible>
+          <WhenVisible duration={1}>
+            <div className="w-3/4 flex flex-col mx-auto">
+              <Image
+                src="/assets/images/icon_notifications.webp"
+                width={50}
+                height={60}
+                alt="Icon for notifications"
+                className="mb-6"
+              />
+              <p className="gray_text">
+                <strong className="text-white">
+                  Read notifications aloud
+                </strong>
+                <br /> Siri can read out important messages and notifications as
+                they arrive – and you can respond to messages using just your
+                voice.
+              </p>
+            </div>
+          </WhenVisible>
+        </div>
+      </section>
     </>
   );
 };
