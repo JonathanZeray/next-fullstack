@@ -157,7 +157,7 @@ const AirpodInfo = () => {
         </section>
       </WhenVisible>
       <section className="">
-        <div className="h-[200vh] flex flex-col justify-around items-center gray_text font-inter font-semibold">
+        <div className="h-[200vh] flex flex-col justify-around gray_text font-inter font-semibold">
           <WhenVisible duration={1}>
             <div className="w-3/4 flex flex-col mx-auto">
               <Image
