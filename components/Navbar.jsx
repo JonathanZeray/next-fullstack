@@ -21,19 +21,20 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="flex-between w-full bg-white mb-2 pt-3">
+    <nav className="sticky top-3 z-20 flex justify-between items-center w-3/4 mx-auto mt-3 bg-white p-3 font-inter rounded-lg">
+      {/* w-full remove mx-auto mt-3 */}
       <Link href="/" className="flex gap-2 flex-center">
         <Image
           src="/assets/images/pear-logo.svg"
-          width={30}
-          height={30}
+          width={20}
+          height={20}
           alt="Promptopia Logo"
           className="object-contain"
         />
-        <p className="logo_text">TheProduct</p>
+        <p className="logo_text">iPear</p>
       </Link>
       <Link href="/feed-page">
-      <p className="font-bold" title="See what others are saying">Feed</p>
+      <p className="font-bold" title="See what others are saying">Reviews</p>
       </Link>
 
 
@@ -65,7 +66,7 @@ const Navbar = () => {
                   type="button"
                   key="provider.name"
                   onClick={() => signIn(provider.id)}
-                  className="black_btn"
+                  className="black_btn "
                 >
                   Sign In
                 </button>
