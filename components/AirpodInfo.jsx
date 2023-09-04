@@ -31,7 +31,7 @@ const AirpodInfo = () => {
 
   return (
     <>
-      <section className="relative h-screen w-full flex flex-col items-center">
+      <section className="relative h-screen w-full flex flex-col items-center font-inter">
         <div className="w-3/4 mt-12">
           <h3 className="w-full sm:w-2/4 gray_text font-bold text-xl">
             <span className="text-container text-white">
@@ -132,7 +132,8 @@ const AirpodInfo = () => {
               <source src="/assets/video/phone-and-case.mp4" type="video/mp4" />
             </video>
           </div>
-          <div className="flex flex-col justify-around h-screen sm:h-full w-3/4 sm:w-2/4 mx-auto gray_text font-semibold text-xl sm:text-2xl">
+          <div className="flex flex-col justify-around h-screen sm:h-full w-3/4 sm:w-2/4 
+          mx-auto gray_text font-semibold text-xl sm:text-2xl font-inter">
             <WhenVisible duration={0.75}>
               <p className="">
                 <span className="text-white">Magically simple setup</span>{" "}

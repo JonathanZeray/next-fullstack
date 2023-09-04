@@ -5,7 +5,7 @@ const SoundInfo = () => {
   return (
     <>
       <div className="h-[20vh] border-0"></div>
-      <section className="font-satoshi h-screen w-full leading-1">
+      <section className="h-screen w-full leading-1">
         <div className="text-white ml-6 sm:mx-32 mb-32 sm:mb-20">
           <h2 className="font-semibold text-2xl sm:text-4xl mb-4">Sound</h2>
           <h3 className="font-bold text-4xl sm:text-8xl mb-8">

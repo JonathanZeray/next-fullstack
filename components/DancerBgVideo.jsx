@@ -58,7 +58,7 @@ const DancerBgVideo = () => {
           <source src="/assets/video/dancer.mp4" type="video/mp4" />
         </video>
         <div className="absolute sm:inset-y-1/4 inset-y-2/4 ml-4 mr-12 sm:mx-28">
-          <h2 className="z-1 font-semibold sm:text-5xl text-3xl sm:text-center text-left text-white leading-10">
+          <h2 className="z-1 font-inter font-semibold sm:text-5xl text-3xl sm:text-center text-left text-white leading-10">
             <span className="split mb-20">
               Up to 2 times more active noise cancellation compared to the
               previous generation.
