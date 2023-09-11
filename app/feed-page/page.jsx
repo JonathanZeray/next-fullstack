@@ -8,7 +8,7 @@ const FeedPage = () => {
       <span className=" text-center">the new AirPods Pro</span>
     </h1>
     <p className="gray_text m-8">
-      Search for what others are saying or scroll down to see what others think about the AirPods Pro.
+      Search by user/tag or scroll down to see what others are saying about the new AirPods Pro.
     </p>
     <Feed />
   </section>

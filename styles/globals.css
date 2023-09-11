@@ -21,6 +21,10 @@ body {
   color: #6e6e73;
 }
 
+.nav_bg_gray {
+  background-color: #121212;
+}
+
 .main {
   width: 100vw;
   min-height: 100vh;
@@ -150,7 +154,7 @@ body {
 
 /* Nav Component */
 .logo_text {
-  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+  @apply max-sm:hidden font-inter font-semibold text-lg tracking-wide;
 }
 
 .dropdown {

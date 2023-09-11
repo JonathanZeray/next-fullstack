@@ -21,7 +21,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="sticky top-3 z-20 flex justify-between items-center w-3/4 mx-auto mt-3 bg-white p-3 font-inter rounded-lg">
+    <nav className="sticky top-0 z-20 flex justify-between items-center w-full border-b-[1px] nav_bg_gray p-3 font-inter text-white ">
       {/* w-full remove mx-auto mt-3 */}
       <Link href="/" className="flex gap-2 flex-center">
         <Image
@@ -34,7 +34,7 @@ const Navbar = () => {
         <p className="logo_text">iPear</p>
       </Link>
       <Link href="/feed-page">
-      <p className="font-bold" title="See what others are saying">Reviews</p>
+      <p className="text-sm font-inter" title="See what others are saying">Reviews</p>
       </Link>
 
 

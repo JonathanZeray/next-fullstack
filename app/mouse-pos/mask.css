@@ -1,0 +1,38 @@
+body {
+    overflow: hidden;
+
+}
+.maint {
+  height: 100vh;
+}
+
+.masks,
+.other-section {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afa18f;
+  font-size: 64px;
+  line-height: 66px;
+  cursor: default;
+}
+
+.text-paragraph {
+  width: 1000px;
+  padding: 40px;
+}
+
+.span-paragraph {
+  color: #ec4e39;
+}
+
+.masks {
+  mask-image: url("../../public/assets/icons/mask.svg");
+  mask-repeat: no-repeat;
+  mask-size: 40px;
+  background: #ec4e39;
+  position: absolute;
+  color: black;
+}

@@ -99,20 +99,22 @@ function ScrollImages() {
               <br />
               <div className="flex justify-center">
                 <p className="sm:w-2/4 font-inter text-white text-xl text-center">
-                  Up to 2 times more active noise cancellation compared to the
-                  previous generation. With touch controls, you adjust the
-                  volume with a swipe. And the battery life takes a significant
-                  step forward – one charge lasts for 6 hours of use.
+                  AirPods Pro takes the individual listening experience to a new
+                  level. Personalized spatial audio with dynamic head tracking
+                  works seamlessly with all your devices and surrounds you with
+                  a deeper three-dimensional sound.
                 </p>
               </div>
             </WhenVisible>
           </div>
         </section>
-          <div className="w-full sm:h-screen flex justify-center items-center">
+        <div className="w-full sm:h-screen flex justify-center items-center">
           <VisibleExpand>
-            <h1 className="font-inter text-white sm:text-8xl font-bold text-3xl mb-20">A redefined masterpiece</h1>
+            <h1 className="font-inter text-white sm:text-8xl font-bold text-3xl mb-20">
+              A redefined masterpiece
+            </h1>
           </VisibleExpand>
-          </div>
+        </div>
         {/* <section className="relative text-center h-screen flex justify-center items-center">
           <Airpods />
         </section> */}

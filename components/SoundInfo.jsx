@@ -35,7 +35,7 @@ const SoundInfo = () => {
         </div>
         <AirpodInfo />
       </section>
-    </>
+        </>
   );
 };
 
