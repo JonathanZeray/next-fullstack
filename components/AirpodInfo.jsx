@@ -8,6 +8,7 @@ import Image from "next/image";
 
 import "./AirpodInfo.css";
 import { WhenVisible } from "./WhenVisible";
+import SlidingImages from "./SlidingImages/SlidingImages";
 
 const AirpodInfo = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -132,8 +133,10 @@ const AirpodInfo = () => {
               <source src="/assets/video/phone-and-case.mp4" type="video/mp4" />
             </video>
           </div>
-          <div className="flex flex-col justify-around h-screen sm:h-full w-3/4 sm:w-2/4 
-          mx-auto gray_text font-semibold text-xl sm:text-2xl font-inter">
+          <div
+            className="flex flex-col justify-around h-screen sm:h-full w-3/4 sm:w-2/4 
+          mx-auto gray_text font-semibold text-xl sm:text-2xl font-inter"
+          >
             <WhenVisible duration={0.75}>
               <p className="">
                 <span className="text-white">Magically simple setup</span>{" "}
@@ -231,9 +234,7 @@ const AirpodInfo = () => {
                 className="mb-6"
               />
               <p className="">
-                <strong className="text-white">
-                  Read notifications aloud
-                </strong>
+                <strong className="text-white">Read notifications aloud</strong>
                 <br /> Siri can read out important messages and notifications as
                 they arrive – and you can respond to messages using just your
                 voice.
@@ -242,6 +243,12 @@ const AirpodInfo = () => {
           </WhenVisible>
         </div>
       </section>
+      <div>
+        <SlidingImages />
+      </div>
+      <div>
+        <div className="footer-bg-gray h-screen w-full overflow-x-hidden"></div>
+      </div>
     </>
   );
 };

@@ -1,0 +1,64 @@
+body {
+  overflow-x: hidden;
+}
+
+.slidingImages {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  position: relative;
+  margin-top: 200px;
+  background-color: black;
+  z-index: 1;
+  /* margin-bottom: 100vh; */
+}
+
+.slider {
+  display: flex;
+  position: relative;
+  gap: 3vw;
+  width: 110vw;
+  left: -5vw;
+}
+
+.project {
+  width: 25%;
+  height: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.textContainer {
+  margin-top: 20px;
+}
+.imageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+}
+
+Image {
+  /* object-fit:contain; */
+}
+
+.circleContainer {
+  position: relative;
+  margin-top: 100px;
+}
+
+.circle {
+  height: 1550%;
+  width: 120%;
+  left: -10%;
+  border-radius: 0 0 50% 50%;
+  background-color: black;
+  z-index: 1;
+  position: absolute;
+  box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.748);
+}

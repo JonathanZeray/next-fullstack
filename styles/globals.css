@@ -25,6 +25,10 @@ body {
   background-color: #121212;
 }
 
+.footer-bg-gray {
+  background-color: #F5F5F7;
+}
+
 .main {
   width: 100vw;
   min-height: 100vh;
@@ -185,23 +189,3 @@ body {
 .flex-between {
   @apply flex justify-between items-center;
 }
-
-html.lenis {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-   pointer-events: none;
-} 
