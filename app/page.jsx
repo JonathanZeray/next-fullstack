@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import ScrollImages from "@components/ScrollImages";
 import DancerBgVideo from "@components/DancerBgVideo";
