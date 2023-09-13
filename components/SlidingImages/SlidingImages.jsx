@@ -8,19 +8,19 @@ import "./SlidingImages.css";
 
 const slider1 = [
   {
-    color: "#e3e3e3",
-    src: "iphone14pro.webp",
-    product: "Iphone 14Pro",
-    price: "$999",
+    color: "#E7E8EA",
+    src: "macbookAir.png",
+    product: "Macbook",
+    price: "$2000",
   },
   {
-    color: "#e3e3e3",
-    src: "iphone14.webp",
+    color: "#D7D7DC",
+    src: "i14.png",
     product: "Iphone 14",
     price: "$899",
   },
   {
-    color: "#e3e3e3",
+    color: "#E7E7E7",
     src: "iphone13.webp",
     product: "Iphone 13",
     price: "$799",
@@ -35,26 +35,26 @@ const slider1 = [
 
 const slider2 = [
   {
-    color: "#e3e3e3",
+    color: "#5f6470",
     src: "airtag.webp",
     product: "Airtag",
     price: "$99",
   },
   {
-    color: "#e3e3e3",
-    src: "appleWatch5.jpg",
+    color: "#E8E4E5",
+    src: "apwatch.png",
     product: "Apple Watch",
     price: "$599",
   },
   {
-    color: "#e3e3e3",
-    src: "ipad.webp",
-    product: "iPad 10.9'' 10th Gen",
+    color: "#D7D4CF",
+    src: "ipad.png",
+    product: "iPad 10.9''",
     price: "$849",
   },
   {
-    color: "#e3e3e3",
-    src: "visionPro.webp",
+    color: "#D7D7DC",
+    src: "apVisPro.png",
     product: "Vision Pro",
     price: "$4999",
   },
@@ -85,13 +85,15 @@ const SlidingImages = () => {
                 <div className="imageContainer">
                   <Image
                     fill={true}
+                    // width={100}
+                    // height={100}
                     alt={"image of apple product"}
                     src={`/assets/product-images/${project.src}`}
                   />
                 </div>
                 <div className="text-container">
                   <h3>{project.product}</h3>
-                  <h3>
+                  <h3 className="text-center">
                     <strong>{project.price}</strong>
                   </h3>
                 </div>
@@ -116,7 +118,7 @@ const SlidingImages = () => {
                 </div>
                 <div className="text-container">
                   <h3>{project.product}</h3>
-                  <h3>
+                  <h3 className="text-center">
                     <strong>{project.price}</strong>
                   </h3>
                 </div>
