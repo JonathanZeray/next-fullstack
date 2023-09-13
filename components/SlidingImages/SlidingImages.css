@@ -10,6 +10,7 @@ body {
   margin-top: 200px;
   background-color: black;
   z-index: 1;
+  /* overflow: hidden; */
   /* margin-bottom: 100vh; */
 }
 
@@ -17,8 +18,8 @@ body {
   display: flex;
   position: relative;
   gap: 3vw;
-  width: 110vw;
-  left: -5vw;
+  width: 100vw;
+  /* left: -5vw; */
 }
 
 .project {
@@ -61,4 +62,10 @@ Image {
   z-index: 1;
   position: absolute;
   box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.748);
+}
+
+@media only screen and (max-device-width: 480px) {
+.slidingImages {
+  overflow: hidden;
+}
 }

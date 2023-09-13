@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const PreLoader = () => {
   const [index, setIndex] = useState(0);
 
-  const words = ["苹果", "Maçã", "Apfel", "Pomme", "りんご", "Mela", "Apple."];
+  const words = ["• 苹果", "• Maçã", "• Apfel", "• Pomme", "• りんご", "• Mela", "• Apple"];
 
   useEffect(() => {
     if(index == words.length - 1) return;
@@ -22,7 +22,7 @@ const PreLoader = () => {
       exit="exit"
       className="absolute z-50 h-screen pb-12 w-full bg-black flex justify-center items-center"
     >
-      <p className="font-satoshi font-semibold text-white text-6xl">{words[index]}</p>
+      <p className="font-inter font-semibold text-white text-6xl">{words[index]}</p>
     </motion.div>
   );
 };
