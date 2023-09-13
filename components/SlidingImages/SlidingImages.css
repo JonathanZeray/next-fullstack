@@ -10,8 +10,6 @@ body {
   margin-top: 200px;
   background-color: black;
   z-index: 1;
-  /* overflow: hidden; */
-  /* margin-bottom: 100vh; */
 }
 
 .slider {
@@ -19,7 +17,6 @@ body {
   position: relative;
   gap: 3vw;
   width: 100vw;
-  /* left: -5vw; */
 }
 
 .project {
@@ -42,10 +39,6 @@ body {
   align-items: center;
   width: 80%;
   height: 80%;
-}
-
-Image {
-  /* object-fit:contain; */
 }
 
 .circleContainer {
