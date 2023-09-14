@@ -7,10 +7,10 @@ import PreLoader from "@components/PreLoader";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 
-export const metadata = {
-  title: "The Airpods Pro",
-  description: "Discover the new exciting Airpods Pro.",
-};
+// export const metadata = {
+//   title: "The Airpods Pro",
+//   description: "Discover the new exciting Airpods Pro.",
+// };
 
 const RootLayout = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
