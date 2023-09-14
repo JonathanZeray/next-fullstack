@@ -34,6 +34,14 @@ body {
   background-color: #F5F5F7;
 }
 
+.footer-li-gray {
+  color: #767679;
+}
+
+.footer-ul-gray {
+  color: #1D1D1F;
+}
+
 .main {
   width: 100vw;
   min-height: 100vh;

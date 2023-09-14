@@ -9,6 +9,7 @@ import Image from "next/image";
 import "./AirpodInfo.css";
 import { WhenVisible } from "./WhenVisible";
 import SlidingImages from "./SlidingImages/SlidingImages";
+import Footer from "./Footer";
 
 const AirpodInfo = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -246,9 +247,9 @@ const AirpodInfo = () => {
       <div>
         <SlidingImages />
       </div>
-      <div>
-        <div className="footer-bg-gray h-screen w-full overflow-x-hidden"></div>
-      </div>
+        <div className="footer-bg-gray h-screen sm:h-[80vh] w-full flex justify-center items-center overflow-x-hidden">
+        <Footer />
+        </div>
     </>
   );
 };

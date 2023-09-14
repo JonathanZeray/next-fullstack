@@ -7,7 +7,7 @@ import CircleBgVideo from "./CircleBgVideo";
 const Airpods = () => {
   return (
     <>
-    <CircleBgVideo />
+    {/* <CircleBgVideo /> */}
       <Canvas>
         <PresentationControls>
           <Float speed={2}>
