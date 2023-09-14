@@ -28,10 +28,10 @@ const Navbar = () => {
           src="/assets/images/pear-logo.svg"
           width={20}
           height={20}
-          alt="Promptopia Logo"
+          alt="Pear Logo"
           className="object-contain"
         />
-        <p className="logo_text">iPear</p>
+        <p className="logo_text">Apple</p>
       </Link>
       <Link href="/feed-page">
       <p className="text-sm font-inter" title="See what others are saying">Reviews</p>

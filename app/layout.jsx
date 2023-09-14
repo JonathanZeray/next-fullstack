@@ -30,7 +30,6 @@ const RootLayout = ({ children }) => {
           <div className="">
             <div className="" />
           </div>
-
           <main className="">
             <AnimatePresence mode="wait">{isLoading && <PreLoader />}</AnimatePresence>
             <Navbar />
