@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .airpod_tip {
+        width: 8rem;
+        height: 10rem;
+    }
+    .airpod_silicone_xs {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .airpod_silicone_s {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .airpod_silicone_m {
+        width: 3.75rem;
+        height: 4rem;
+    }
+    .airpod_silicone_l {
+        width: 4.10rem;
+        height: 4.5rem;
+    }
+}

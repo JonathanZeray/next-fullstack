@@ -1,18 +1,32 @@
-import Feed from "@components/Feed";
+"use client";
+import { useEffect, useState } from "react";
+
+import ScrollImages from "@components/ScrollImages";
+import DancerBgVideo from "@components/DancerBgVideo";
+import { WhenVisible } from "@components/WhenVisible";
+import SoundInfo from "@components/SoundInfo";
+
 
 const Home = () => {
+  useEffect(() => {
+
+    (
+      async () => {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+
+  }, [])
+
   return (
-    <section className="w-full flex-center flex-col">
-      <h1 className="head_text text-center">
-        Discover & Share <br className="max-md:hidden" />
-        <span className="orange_gradient text-center">AI-Powered Prompts</span>
-      </h1>
-      <p className="desc text-center">
-        Promptopia is a open source Lorem ipsum dolor sit amet. Lorem ipsum
-        dolor sit amet.
-      </p>
-      <Feed />
-    </section>
+    <>
+      <ScrollImages />
+      <WhenVisible duration={1}>
+        <DancerBgVideo />
+      </WhenVisible>
+      <SoundInfo />
+    </>
   );
 };
 
